@@ -1,0 +1,137 @@
+// @ts-check
+// `@type` JSDoc annotations allow editor autocompletion and type checking
+// (when paired with `@ts-check`).
+// There are various equivalent ways to declare your Docusaurus config.
+// See: https://docusaurus.io/docs/api/docusaurus-config
+
+import {themes as prismThemes} from 'prism-react-renderer';
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+  title: 'Box3TRC',
+  tagline: '🔬 Box3TRC 「Technical Research Center」🔬 欢迎来到岛研所！',
+  favicon: 'img/favicon.ico',
+
+  // Set the production url of your site here
+  url: 'https://box3trc.tobylai.fun',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: '/',
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'Box3TRC', // Usually your GitHub org/user name.
+  projectName: 'documentation', // Usually your repo name.
+
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans'],
+  },
+
+  presets: [
+    [
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
+        docs: {
+          sidebarPath: './sidebars.js',
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/Box3TRC/documentation',
+        },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/Box3TRC/documentation',
+        },
+        theme: {
+          customCss: './src/css/custom.css',
+        },
+      }),
+    ],
+  ],
+
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      // Replace with your project's social card
+      image: 'img/docusaurus-social-card.jpg',
+      navbar: {
+        title: 'Box3TRC',
+        logo: {
+          alt: 'Box3TRC logo',
+          src: 'img/logo.svg',
+        },
+        items: [
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: '文档',
+          },
+          {to: '/blog', label: '博客', position: 'left'},
+          {
+            href: 'https://github.com/Box3TRC/documentation',
+            label: 'GitHub',
+            position: 'right',
+          },
+        ],
+      },
+      footer: {
+        style: 'dark',
+        links: [
+          {
+            title: '文档',
+            items: [
+              {
+                label: '介绍',
+                to: '/docs/intro',
+              },
+            ],
+          },
+          {
+            title: '社区',
+            items: [
+              {
+                label: '论坛 (Github Discussions)',
+                href: 'https://github.com/orgs/Box3TRC/discussions/',
+              },
+              {
+                label: 'QQ群',
+                href: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=vxE6x2ultSJhYd1Qu_L0GGlXzpwgtwLc&authKey=1MDaRU4u6b6hLpXrINiUD5DrD4osW7850K0dYaNb6iYiyCk1cSCtjP9xxW6eS2IC&noverify=0&group_code=579960255',
+              },
+            ],
+          },
+          {
+            title: '更多',
+            items: [
+              {
+                label: '博客',
+                to: '/blog',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/Box3TRC',
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} Box3TRC。使用Docusaurus构建。`,
+      },
+      prism: {
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
+      },
+    }),
+};
+
+export default config;
