@@ -32,8 +32,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title} 你好！`}
+      description="Box3TRC「Box3 Technical Research Center」，神奇代码岛尖端技术研究所，即岛研所">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
