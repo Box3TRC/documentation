@@ -18,3 +18,5 @@ Box3TRC「**Box3** **T**echnical **R**esearch **C**enter」，`神奇代码岛�
 - 🟡 4.转换系统的集成[Box3TRC/Box3Convert](https://github.com/Box3TRC/box3convert)
 - 🔵 5.更真实的物理引擎【BoxPhysics】
 - 🔵 6.旧技术的整理
+
+由 尹子@SMCYDS 创建
