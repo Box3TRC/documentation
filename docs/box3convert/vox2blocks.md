@@ -1,5 +1,6 @@
 ---
 title: Vox模型转建筑
+sidebar_position: 1
 ---
 # Vox模型转建筑
 
