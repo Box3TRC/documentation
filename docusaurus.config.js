@@ -10,10 +10,10 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Box3TRC',
   tagline: '🔬 Box3TRC 「Technical Research Center」🔬 欢迎来到岛研所！',
-  favicon: 'img/favicon.ico',
+  favicon: 'https://one.trc.tobylai.fun/logo.png',
 
   // Set the production url of your site here
-  url: 'https://box3trc.tobylai.fun',
+  url: 'https://trc.tobylai.fun',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -64,12 +64,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'https://one.trc.tobylai.fun/logo.png',
       navbar: {
         title: 'Box3TRC',
         logo: {
           alt: 'Box3TRC logo',
-          src: 'img/logo.svg',
+          src: 'https://one.trc.tobylai.fun/logo.png',
         },
         items: [
           {
