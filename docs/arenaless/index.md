@@ -40,9 +40,9 @@ arenaless之所以叫arenaless，是在于它几乎只保留了ArenaPro的核心
 | AI 助手 | √* | √ | al的`菜鸡AIPlus`功能和智商都逊色于ap的`Chat吉PT`,吉pt的功能十分强大 |
 | 内置创作端Webview | ×* | √ | al在web环境中建议使用浏览器直接打开 | |
 | 自动更新.d.ts | × | √ | al目前不支持自动更新.d.ts，会固定使用模板内的 | |
-| 打包 | `ts`+`rollup`+`esbuild` | `ts`+`webpack`+`terser` | |
-| 网络导入 | √ | × | |
-| npm | ×* | √ | al使用网络导入代替本地npm，可以`import ... from "npm:模块名"` |
+| 打包 | `ts`+`rollup`+`terser` | `ts`+`webpack`+`terser` | rollup似乎更快哦 |
+| 网络导入 | √ | × | AL可以直接从https链接导入库 [详见](/docs/arenaless/FAQ#我想用npm的包怎么办) |
+| npm | ×* | √ | al使用网络导入代替本地npm [详见](/docs/arenaless/FAQ#我想用npm的包怎么办) |
 
 ## 鸣谢
 - 感谢`@冷鱼闲风`大佬的指点。
