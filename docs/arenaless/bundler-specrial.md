@@ -41,7 +41,7 @@ import xxx from "xxx?base64";
 ```
 #### ?wasm 导入wasm实例
 导入一个`Promise<WebAssembly.Instance>`形式的wasm文件。
-> 这个相关的东西你可以到`examples/wasm-hello-world`查看
+> 这个相关的东西你可以到ArenaLess-Bundler仓库的`examples/wasm-hello-world`查看
 ```typescript
 import hellowasm from "hellowasm.wasm?wasm";
 hellowasm().then((instance:WebAssembly.Instance)=>{
