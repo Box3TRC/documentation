@@ -14,7 +14,7 @@ sidebar_position: 5
 ### 第一步 修改两个tsconfig.json
 项目目录下有两个tsconfig，一个位于`server/tsconfig.json`，另一个位于`client/tsconfig.json`。
 你需要在这**两个文件**的`"compilerOptions"`下面增加`"allowJS": true`
-```jsonc
+```json
 {
     "compilerOptions": {
         "allowJs": true,
