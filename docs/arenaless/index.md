@@ -51,8 +51,8 @@ arenaless之所以叫arenaless，是在于它几乎只保留了ArenaPro的核心
 - 感谢神奇代码岛。
 - 感谢岛研所。
 ### 以下项目对本项目的实现有很大帮助
-- @rollup/browser及其virtual,alias插件。这是本插件打包器的实现。
-- esbuild-wasm 用于压缩js代码(以后可能会变更)
+- @rollup/browser
+- [Box3TRC/ArenaLess-Bundler](https://github.com/Box3TRC/ArenaLess-Bundler/) 这是构建工具
 - pako 用来解压缩gzip (模板是gzip压缩过的)
 - [esm.sh](https://esm.sh) AL使用它来获取npm,jsr,gh模块。
 - hono API中转服务器
