@@ -9,7 +9,7 @@ hide_table_of_contents: false
 ---
 
 Box3Convert是一个岛三在线转换工具，支持vox模型转建筑、建筑转vox模型，后续功能仍在开发中。
-
+<!-- truncate -->
 # box3convert
 Box3Convert，在线进行 `Box3` 相关的转换操作
 

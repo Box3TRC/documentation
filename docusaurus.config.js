@@ -44,14 +44,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Box3TRC/documentation',
+            'https://github.com/Box3TRC/documentation/blob/main',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Box3TRC/documentation',
+            'https://github.com/Box3TRC/documentation/blob/main',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -64,12 +64,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'https://one.trc.tobylai.fun/logo.png',
+      image: '/img/trclogo.png',
       navbar: {
         title: 'Box3TRC',
         logo: {
-          alt: 'Box3TRC logo',
-          src: 'https://one.trc.tobylai.fun/logo.png',
+          alt: '[logo]',
+          src: '/img/trclogo.png',
         },
         items: [
           {
@@ -105,10 +105,10 @@ const config = {
                 label: '论坛 (Github Discussions)',
                 href: 'https://github.com/orgs/Box3TRC/discussions/',
               },
-              {
-                label: 'QQ群',
-                href: 'https://qm.qq.com/q/Uzgx47iWWK',
-              },
+              // {
+              //   label: 'QQ群',
+              //   href: 'https://qm.qq.com/q/Uzgx47iWWK',
+              // },
             ],
           },
           {
@@ -128,8 +128,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Box3TRC。使用Docusaurus构建。`,
       },
       prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
+        theme: prismThemes.vsLight,
+        darkTheme: prismThemes.vsDark,
       },
     }),
 };
