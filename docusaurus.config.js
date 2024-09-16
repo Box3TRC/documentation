@@ -4,13 +4,13 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Box3TRC',
   tagline: '🔬 Box3TRC 「Technical Research Center」🔬 欢迎来到岛研所！',
-  favicon: 'https://one.trc.tobylai.fun/logo.png',
+  favicon: '/img/trclogo.png',
 
   // Set the production url of your site here
   url: 'https://trc.tobylai.fun',
@@ -78,7 +78,7 @@ const config = {
             position: 'left',
             label: '文档',
           },
-          {to: '/blog', label: '博客', position: 'left'},
+          { to: '/blog', label: '博客', position: 'left' },
           {
             href: 'https://github.com/Box3TRC/documentation',
             label: 'GitHub',
@@ -132,6 +132,15 @@ const config = {
         darkTheme: prismThemes.vsDark,
       },
     }),
+  themes:[
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      ({
+        hashed: true,
+        language: ["en", "zh"],
+      }),
+    ],
+  ]
 };
 
 export default config;
