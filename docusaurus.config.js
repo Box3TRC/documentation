@@ -5,6 +5,7 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import { themes as prismThemes } from 'prism-react-renderer';
+import tabBlocks from "docusaurus-remark-plugin-tab-blocks";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -40,6 +41,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          remarkPlugins: [[tabBlocks,{}]],
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -47,6 +49,7 @@ const config = {
             'https://github.com/Box3TRC/documentation/blob/main',
         },
         blog: {
+          remarkPlugins: [tabBlocks],
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -141,6 +144,38 @@ const config = {
         explicitSearchResultPath: true,
       }),
     ],
+  ],plugins:[
+    // [
+    //   'vercel-analytics',
+    //   {
+    //     debug: true,
+    //     mode: 'auto',
+    //   },
+    // ],
+    // [
+    //   'docusaurus-plugin-typedoc',
+    //   {
+    //     id: 'typedoc-areact',
+    //     entryPoints: ['dts/areact/index.d.ts'],
+    //     skipErrorChecking: true,
+    //     name: "模块: areact",
+    //     out: "/docs/areact/api/index", 
+    //     sidebar: {
+    //       "autoConfiguration": false,
+    //       "pretty": false
+    //     }
+    //   },
+    // ],
+    // [
+    //   'docusaurus-plugin-typedoc',
+    //   {
+    //     id: 'typedoc-areact-components',
+    //     entryPoints: ['dts/areact/components.d.ts'],
+    //     skipErrorChecking: true,
+    //     name: "模块: areact/components",
+    //     out: "/docs/areact/api/components"
+    //   },
+    // ],
   ]
 };
 

@@ -1,6 +1,11 @@
 ---
-title: Dao3-AUI (React on 神岛)
+title: ⚠迁移 Dao3-AUI
 ---
+
+:::danger 迁移！
+dao3-aui不再维护，请迁移到Areact
+:::
+
 # Dao3-AUI
 Dao3-AUI是**开源**的，如果你有需求或者bug汇报，请到[本项目repo](https://github.com/Box3TRC/dao3-aui)开issue。
 ## 什么是Dao3-AUI ⚛️+📦
