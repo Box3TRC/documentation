@@ -41,7 +41,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          remarkPlugins: [[tabBlocks,{}]],
+          remarkPlugins: [[tabBlocks, {}]],
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -135,7 +135,7 @@ const config = {
         darkTheme: prismThemes.vsDark,
       },
     }),
-  themes:[
+  themes: [
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       ({
@@ -144,7 +144,7 @@ const config = {
         explicitSearchResultPath: true,
       }),
     ],
-  ],plugins:[
+  ], plugins: [
     // [
     //   'vercel-analytics',
     //   {
@@ -176,6 +176,34 @@ const config = {
     //     out: "/docs/areact/api/components"
     //   },
     // ],
+    [
+      '@docusaurus/plugin-pwa',
+      {
+        // debug: true,
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'standalone',
+          'queryString',
+        ],
+        pwaHead: [
+          {
+            tagName: 'link',
+            rel: 'icon',
+            href: '/img/trclogo.png',
+          },
+          {
+            tagName: 'link',
+            rel: 'manifest',
+            href: '/manifest.json', // your PWA manifest
+          },
+          {
+            tagName: 'meta',
+            name: 'theme-color',
+            content: '#7345c4',
+          },
+        ],
+      },
+    ],
   ]
 };
 

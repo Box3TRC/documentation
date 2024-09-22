@@ -1,0 +1,15 @@
+{
+    "name": "Box3TRC 文档",
+    "short_name": "岛研所文档",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#7345c4",
+    "description": "Box3TRC文档，🔬 Box3TRC 「Technical Research Center」🔬 欢迎来到岛研所！ ",
+    "icons": [
+        {
+            "src": "/img/trclogo.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        }
+    ]
+}
