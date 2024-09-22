@@ -210,10 +210,12 @@ function App() {
       backgroundOpacity="100%"
     ></Text>
     <Input x="0px" y="50px" width="200px" height="50px" placeholder="请输入你的名字："
-      onInput={(e)=>setName(e.target.getAttribute("text"))} // 使用onInput事件监听输入
+      onInput={(e)=>setName(e.target.getAttribute("text")!)} // 使用onInput事件监听输入
       text={name} // 绑定是双向的~
     ></Input>
   </>);
 }
 app.mount(<App />, ui);
 ```
+
+![1726986460456](getting-started/1726986460456.png)
