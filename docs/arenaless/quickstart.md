@@ -2,6 +2,12 @@
 title: 快速入门
 sidebar_position: 1
 ---
+:::note[QQ群]
+如果想要交流 **ArenaPro (或者AL)** 相关内容，并了解最新资讯，可以加入 **ArenaPro创作者QQ群**：
+
+[群聊：ArenaPro Creator](https://qm.qq.com/cgi-bin/qm/qr?authKey=LteV6YzMX0xKmrQSp8%2BaNi6YUdonwyVMc44npCKlNymwnoWVZBmG5Y4S4N9RwxEP&k=JeZQYLLnherYW6pGlbODkErutSmbkzr-&noverify=0)
+:::
+
 # 快速入门 ArenaLess
 ## 如何安装
 这个前文已有提及[点击这里查看](/docs/arenaless/#如何安装)

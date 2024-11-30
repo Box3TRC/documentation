@@ -56,3 +56,9 @@ arenaless之所以叫arenaless，是在于它几乎只保留了ArenaPro的核心
 - pako 用来解压缩gzip (模板是gzip压缩过的)
 - [esm.sh](https://esm.sh) AL使用它来获取npm,jsr,gh模块。
 - hono API中转服务器
+
+:::note[QQ群]
+如果想要交流 **ArenaPro (或者AL)** 相关内容，并了解最新资讯，可以加入 **ArenaPro创作者QQ群**：
+
+[群聊：ArenaPro Creator](https://qm.qq.com/cgi-bin/qm/qr?authKey=LteV6YzMX0xKmrQSp8%2BaNi6YUdonwyVMc44npCKlNymwnoWVZBmG5Y4S4N9RwxEP&k=JeZQYLLnherYW6pGlbODkErutSmbkzr-&noverify=0)
+:::
